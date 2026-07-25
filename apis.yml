@@ -1,8 +1,26 @@
 aid: cowboy-space-corporation
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cowboy-space-corporation.png
 name: Cowboy Space Corporation
-description: 'Cowboy Space Corporation is a company surfaced as a portfolio company of ivp and added to
-  the API Evangelist network as a stub for enrichment. Sector: space. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Cowboy Space Corporation is a space infrastructure company building orbital
+  data centers to address Earth''s power constraints on artificial intelligence. Its
+  Stampede satellite constellation places megawatt-class, GPU-equipped data centers
+  in Low Earth Orbit powered by abundant solar energy, integrating the compute payload
+  directly into the rocket''s upper stage to maximize capacity and sidestep the multi-year
+  terrestrial grid-connection delays that constrain traditional data centers. The
+  company is an early-stage, venture-backed lead (backed by IVP); it currently
+  publishes a corporate marketing site and careers portal but no developer portal,
+  public API, or technical documentation.'
 url: https://raw.githubusercontent.com/api-evangelist/cowboy-space-corporation/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +30,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Space
+- Satellites
+- Data Centers
+- Artificial Intelligence
+- Cloud Computing
+- Infrastructure
+- Low Earth Orbit
 apis: []
+common:
+- type: DomainSecurity
+  url: security/cowboy-space-corporation-domain-security.yml
+- type: Website
+  url: https://cowboyspace.com
+- type: Careers
+  url: https://jobs.ashbyhq.com/cowboyspace
+- type: TermsOfService
+  url: https://cowboyspace.com/terms
+- type: PrivacyPolicy
+  url: https://cowboyspace.com/privacy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
